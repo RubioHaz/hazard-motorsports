@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_02_21_215532) do
   end
 
   create_table "jeeps", force: :cascade do |t|
+    t.string "name"
     t.string "model"
     t.integer "year"
     t.text "description"

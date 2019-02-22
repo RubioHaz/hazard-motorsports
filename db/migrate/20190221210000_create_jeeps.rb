@@ -1,6 +1,7 @@
 class CreateJeeps < ActiveRecord::Migration[5.2]
   def change
     create_table :jeeps do |t|
+      t.string :name
       t.string :model
       t.integer :year
       t.text :description
